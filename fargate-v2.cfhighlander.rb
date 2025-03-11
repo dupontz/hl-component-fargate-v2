@@ -44,7 +44,7 @@ CfhighlanderTemplate do
   end
 
   #Pass all the config from the parent component to the inlined component
-  Component template: 'github:dupontz/hl-component-esc-task', name: "#{component_name.gsub('-','').gsub('_','')}Task", render: Inline, config: @config do
+  Component template: 'github:dupontz/hl-component-ecs-task', name: "#{component_name.gsub('-','').gsub('_','')}Task", render: Inline, config: @config do
     parameter name: 'DnsDomain', value: Ref('DnsDomain')
   end
 
